@@ -12,7 +12,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">BikeShare</a>
+    <img src="{{ url_for('static', filename='../static/images/tugo-logo2.png') }}" class="image" id="logo1" alt="Tugo Logo"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/">Homee</a>
         </li>
 
 
@@ -56,6 +56,34 @@
     </div>
   </nav>
 
+  <section class="">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+            Welcome to <br />
+            <span class="text-primary">Tugo Bike Share</span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Discover Tucson on two wheels with Tugo Bike Share! With over 330 bikes and 41 stations, navigating the city has never been easier or more fun!
+              <style>
+              div{
+                background-image: url({{ url_for('static', filename='../static/images/bikeRiding.jpg') }});
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+              }
+            </style>
+            </p>
+        </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Jumbotron -->
+</section>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
